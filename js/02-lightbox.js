@@ -19,4 +19,9 @@ function createMarkup(arr) {
     .join("");
 }
 
-const modal = new SimpleLightbox(".gallery a", {});
+const modal = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+  close: false,
+  enableKeyboard: true,
+});
